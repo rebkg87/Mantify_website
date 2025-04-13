@@ -14,9 +14,8 @@ Este sitio tiene como objetivo presentar nuestros servicios, valores, metodolog�
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vitejs.dev/) *(opcional, si lo usaste para el build)*
-- [React Router Dom](https://reactrouter.com/) *(si estás usando navegación)*
-- [EmailJS / Formspree / Netlify Forms] *(para formularios de contacto, si aplica)*
+- [Vite](https://vitejs.dev/) 
+- [React Router Dom](https://reactrouter.com/) 
 
 ---
 
@@ -27,9 +26,9 @@ mantify/
 ├── public/
 │   └── assets/             # Imágenes, íconos, logos
 ├── src/
-│   ├── components/         # Componentes reutilizables (Navbar, Footer, etc.)
-│   ├── pages/              # Páginas principales (Inicio, Servicios, Contacto, etc.)
-│   ├── styles/             # Archivos CSS / configuración Tailwind si aplica
+│   ├── components/         # Componentes reutilizables
+│   ├── pages/              # Páginas principales
+│   ├── styles/             # Archivos CSS
 │   ├── App.jsx             # Componente raíz
 │   └── main.jsx            # Punto de entrada
 ├── tailwind.config.js
