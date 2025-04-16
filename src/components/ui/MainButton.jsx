@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({
+const MainButton = ({
     className = "",
     variant = "default",
     size = "default",
@@ -50,4 +50,4 @@ const Button = ({
     );
 };
 
-export default Button;
+export default MainButton;

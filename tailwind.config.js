@@ -3,7 +3,9 @@ export default {
   darkMode: ["class"],
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     screens: {
@@ -60,7 +62,7 @@ export default {
         input: "#E8ECED",
         ring: "hsl(222.2 84% 4.9%)",
         background: "#ffffff",
-        foreground: "#214350",
+        foreground: "#565D62",
         primary: {
           DEFAULT: "#214350",
           foreground: "#ffffff",
@@ -71,6 +73,7 @@ export default {
         },
         tertiary: {
           DEFAULT: "#bcd9e6",
+          foreground: "#565D62",
         },
         destructive: {
           DEFAULT: "hsl(0 84.2% 60.2%)",
