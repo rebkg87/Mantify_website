@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const MobileNav = ({ menuOpen, setMenuOpen }) => {
     return (
-        <div className={`lg:hidden ${menuOpen ? 'block' : 'hidden'} bg-primary dark:bg-primary p-4`}>
+        <div className={`lg:hidden ${menuOpen ? 'block' : 'hidden'} absolut top-full left-0 w-full h-full bg-primary shadow-md z-50 transition-all duration-300 ease-in-out`}>
             <ul className="flex flex-col gap-4">
                 <li>
                     <NavLink
