@@ -29,7 +29,7 @@ mantify/
 │   ├── components/         # Componentes reutilizables
 │   ├── config/             # Configuraciones globales
 │   ├── context/            # Contextos de React
-│   ├── layout/             # Componentes de layout, como el Header
+│   ├── layout/             # Componentes de layout
 │   ├── pages/              # Páginas principales de la app
 │   ├── router/             # Configuración de rutas
 │   ├── styles/             # Archivos CSS
