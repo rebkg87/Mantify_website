@@ -19,18 +19,27 @@ Este sitio tiene como objetivo presentar nuestros servicios, valores, metodolog�
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Estructura del Proyecto
 
 ```bash
 mantify/
 ├── public/
-│   └── assets/             # Imágenes, íconos, logos
+│   └── assets/             # Archivos estáticos como imágenes, íconos, logos
 ├── src/
 │   ├── components/         # Componentes reutilizables
-│   ├── pages/              # Páginas principales
+│   ├── config/             # Configuraciones globales
+│   ├── context/            # Contextos de React
+│   ├── layout/             # Componentes de layout, como el Header
+│   ├── pages/              # Páginas principales de la app
+│   ├── router/             # Configuración de rutas
 │   ├── styles/             # Archivos CSS
-│   ├── App.jsx             # Componente raíz
-│   └── main.jsx            # Punto de entrada
-├── tailwind.config.js
-├── package.json
-└── README.md
+│   ├── main.jsx            # Punto de entrada
+│   └── index.css           # Estilos globales
+├── .gitignore              # Archivos y carpetas a ignorar en el repositorio
+├── eslint.config.js        # Configuración de ESLint
+├── index.html              # Plantilla HTML
+├── package.json            # Dependencias y scripts del proyecto
+├── package-lock.json       # Bloqueo de dependencias
+├── postcss.config.js       # Configuración de PostCSS
+├── tailwind.config.js      # Configuración de TailwindCSS
+└── vite.config.js          # Configuración de Vite
