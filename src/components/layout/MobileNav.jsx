@@ -2,12 +2,12 @@ import { NavLink } from 'react-router-dom';
 
 const MobileNav = ({ menuOpen, setMenuOpen }) => {
     return (
-        <div className={`lg:hidden ${menuOpen ? 'block' : 'hidden'} absolut top-full left-0 w-full h-full bg-primary shadow-md z-50 transition-all duration-300 ease-in-out`}>
-            <ul className="flex flex-col gap-4">
+        <div className={`lg:hidden ${menuOpen ? 'block' : 'hidden'} fixed top-full left-0 w-full h-full bg-primary bg-opacity-70  transition-all duration-300 ease-in-out`}>
+            <ul className="flex flex-col">
                 <li>
                     <NavLink
                         to="/"
-                        className={({ isActive }) => `flex items-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-secondary'} hover:text-primary dark:text-white dark:hover:text-secondary transition-colors`}
+                        className={({ isActive }) => `flex items-center justify-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-tertiary'} hover:text-primary dark:text-white dark:hover:text-tertiary transition-colors  bg-secondary w-full px-3 py-3 border border-white dark:border-primary dark:border-primary`}
                     >
                         Home
                     </NavLink>
@@ -15,7 +15,7 @@ const MobileNav = ({ menuOpen, setMenuOpen }) => {
                 <li>
                     <NavLink
                         to="/About"
-                        className={({ isActive }) => `flex items-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-secondary'} hover:text-primary dark:text-white dark:hover:text-secondary transition-colors`}
+                        className={({ isActive }) => `flex items-center justify-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-tertiary'} hover:text-primary dark:text-white dark:hover:text-tertiary transition-colors  bg-secondary w-full px-3 py-3 border border-white dark:border-primary`}
                     >
                         Nosotros
                     </NavLink>
@@ -23,7 +23,7 @@ const MobileNav = ({ menuOpen, setMenuOpen }) => {
                 <li>
                     <NavLink
                         to="/Services"
-                        className={({ isActive }) => `flex items-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-secondary'} hover:text-primary dark:text-white dark:hover:text-secondary transition-colors`}
+                        className={({ isActive }) => `flex items-center justify-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-tertiary'} hover:text-primary dark:text-white dark:hover:text-tertiary transition-colors  bg-secondary w-full px-3 py-3 border border-white dark:border-primary`}
                     >
                         Servicios
                     </NavLink>
@@ -31,7 +31,7 @@ const MobileNav = ({ menuOpen, setMenuOpen }) => {
                 <li>
                     <NavLink
                         to="/Contact"
-                        className={({ isActive }) => `flex items-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-secondary'} hover:text-primary dark:text-white dark:hover:text-secondary transition-colors`}
+                        className={({ isActive }) => `flex items-center justify-center text-sm ${isActive ? 'text-primary font-semibold active:font-bold' : 'text-tertiary'} hover:text-primary dark:text-white dark:hover:text-tertiary transition-colors  bg-secondary w-full px-3 py-3 border border-white dark:border-primary`}
                     >
                         Contacto
                     </NavLink>

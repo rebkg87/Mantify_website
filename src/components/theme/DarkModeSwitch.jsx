@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
   return (
     <button
       onClick={toggleDark}
-      className="p-2 rounded-full bg-tertiary dark:bg-secondary text-primary dark:text-white transition-colors ml-6"
+      className="p-3 rounded-full bg-tertiary dark:bg-secondary text-primary dark:text-white transition-colors ml-3"
     >
       {darkMode ? (
         <MoonIcon className="w-4 h-4" />

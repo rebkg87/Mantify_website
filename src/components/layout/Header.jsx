@@ -8,7 +8,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="block w-full max-w-screen-xl px-auto mx-auto bg-white dark:bg-primary bg-opacity-90 sticky top-3 shadow py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
+        <div className="block w-full px-6 mx-auto bg-white dark:bg-primary bg-opacity-90 sticky top-3 shadow py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
             <nav className="container flex items-center justify-between mx-auto text-primary">
                 <SiteLogo width={240} height={60} />
 
