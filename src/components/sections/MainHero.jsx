@@ -47,7 +47,7 @@ const MainHero = () => {
                 </div>
                 <img
                     src='assets/hero/MainHero_Image.jpg'
-                    className="md:w-[70%] md:h-auto lg:w-[50%] w-full h-full object-left object-cover rounded-full md:rounded-tl-full md:rounded-bl-full hover:animate-bounce md:order-2"
+                    className="md:w-[70%] md:h-auto lg:w-[50%] w-full h-full object-left object-cover rounded-full md:rounded-tl-full md:rounded-bl-full hover:animate-bounce md:order-2 shadow-lg"
                     alt="Hero-Image-Home"
                 />
             </section>
