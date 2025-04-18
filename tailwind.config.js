@@ -37,7 +37,7 @@ export default {
       "4xl": ["2.5rem", { lineHeight: "normal" }],
       "5xl": ["3rem", { lineHeight: "normal" }],
       "6xl": ["3.5rem", { lineHeight: "normal" }],
-      "7xl": ["4rem", { lineHeight: "normal" }],
+      "7xl": ["5rem", { lineHeight: "normal" }],
     },
     extend: {
       colors: {
