@@ -6,14 +6,16 @@ const MainButton = ({
     size = "default",
     text,
     onClick,
-    iconVisibility,
-    iconButton = null,
+    iconVisibility = false,
+    iconButton: Icon,
     label = "",
     type = "button",
 }) => {
     const buttonVariant = {
         default:
             "bg-primary text-white hover:bg-primary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
+        secondary:
+        "bg-secondary text-tertiary hover:bg-primary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
         destructive:
             "bg-destructive text-destructive-foreground hover:bg-destructive",
         outline:
@@ -35,16 +37,13 @@ const MainButton = ({
     return (
         <button
             type={type}
-            className={`inline-flex items-center justify-center rounded-md py-2 text-sm font-bold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${buttonVariant[variant]} ${buttonSize[size]} ${className}`}
+            className={`inline-flex items-center justify-center rounded-2xl py-2 text-sm font-bold ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${buttonVariant[variant]} ${buttonSize[size]} ${className}`}
             onClick={onClick}
+            aria-label={label}
         >
             {text}
-            {iconButton && (
-                <img
-                    className={`imgButtonStyle ${iconVisibility}`}
-                    src={iconButton}
-                    alt={label}
-                />
+            {iconVisibility && Icon && (
+                <Icon className="ml-2 w-4 h-4"/>
             )}
         </button>
     );

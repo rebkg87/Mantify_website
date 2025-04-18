@@ -19,7 +19,7 @@ const Layout = () => {
 
     return (
         <div className={darkMode ? 'dark' : ''}>
-        <header>
+        <header  className="sticky top-0 w-full z-50">
             <Header/>
         </header>
             <main>
