@@ -14,7 +14,7 @@ export const siteConfig = {
             text: "#CDCFD0"
         }
     },
-    gradientDark: "assets/hero/gradient_dark.png",
-    gradientLight:"assets/hero/gradient_light.png"
+    gradientDark: "assets/hero/gradii-1920x1080 (4).png",
+    gradientLight:"assets/hero/gradii-1920x1080 (3).png"
 
 }
