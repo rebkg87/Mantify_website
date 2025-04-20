@@ -9,26 +9,27 @@ const MainButton = ({
     iconVisibility = false,
     iconButton: Icon,
     label = "",
-    type = "button",
+    type,
 }) => {
     const buttonVariant = {
         default:
             "bg-primary text-white hover:bg-primary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
         secondary:
-        "bg-secondary text-tertiary hover:bg-primary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
+            "bg-secondary text-tertiary hover:bg-primary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
         destructive:
             "bg-destructive text-destructive-foreground hover:bg-destructive",
         outline:
             "border-2 border-input bg-transparent hover:bg-primary hover:border-transparent hover:text-primary-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary",
-        ghost: "hover:bg-primary hover:text-primary-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+        ghost:
+            "hover:bg-primary hover:text-primary-foreground",
+        link:
+            "text-primary underline-offset-4 hover:underline",
     };
 
     const buttonSize = {
         default: "h-12 px-6",
         none: "p-0",
-        sm: "h-9 px-3 text-xs",
+        sm: "w-12 h-9 px-3 text-xs",
         md: "h-12 px-6",
         lg: "h-14 px-8",
     };
@@ -43,7 +44,7 @@ const MainButton = ({
         >
             {text}
             {iconVisibility && Icon && (
-                <Icon className="ml-2 w-4 h-4"/>
+                <Icon className="ml-2 w-4 h-4" />
             )}
         </button>
     );
