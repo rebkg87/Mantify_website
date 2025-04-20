@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext';
 import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
 
 const Layout = () => {
     const { darkMode } = useTheme();
@@ -25,6 +26,9 @@ const Layout = () => {
             <main>
                 <Outlet />
             </main>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     )
 }
