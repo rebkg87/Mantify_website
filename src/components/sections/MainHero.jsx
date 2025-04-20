@@ -42,6 +42,7 @@ const MainHero = () => {
                             iconVisibility="icon-visible"
                             iconButton={ChevronRightIcon}
                             label="Hero-Button"
+                            type="button"
                         />
                     </div>
                 </div>
