@@ -4,8 +4,8 @@ import AnimatedText from '../ui/AnimatedText'
 const Hero2 = () => {
 
     return (
-        <div className='h-screen w-full overflow-hidden relative'>
-            <section className=' py-20 px-12 absolute top-0 left-0 w-full h-full flex flex-col md:flex-row justify-center items-center gap-6'>
+        <div className='h-screen w-full overflow-hidden relative mt-12'>
+            <section className='py-28 px-12 absolute top-0 left-0 w-full h-full flex flex-col md:flex-row justify-center items-center gap-6'>
                 <div className='flex flex-col md:flex-row items-center gap-6 md:gap-12 w-full mr-10'>
                     <div className="relative z-[1] w-full flex justify-center">
                         <img

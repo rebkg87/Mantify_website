@@ -32,7 +32,7 @@ const HowWeDo = () => {
     ]
 
     return (
-        <div className='w-full h-screen flex flex-col items-center py-32 px-12 gap-6'>
+        <div className='mt-12 w-full h-screen flex flex-col items-center py-20 px-12 gap-6 dark:bg-secondary bg-tertiary'>
             <div>
                 <h2 className='text-secondary font-bold text-3xl dark:text-tertiary'>
                     ¿Cómo lo hacemos?
