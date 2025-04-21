@@ -1,7 +1,6 @@
 import React from 'react'
 import MainHero from '../components/sections/MainHero'
 import Hero2 from '../components/sections/Hero2'
-import Card from '../components/ui/Card'
 import HowWeDo from '../components/sections/HowWeDo'
 import Contact from '../components/sections/Contact'
 
