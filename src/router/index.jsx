@@ -3,6 +3,7 @@ import HomePage from "../pages/HomePage";
 import Layout from "../layout/Layout";
 import ContactPage from "../pages/ContactPage";
 import ServicePage from "../pages/ServicePage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 export const router = createBrowserRouter([
     {
@@ -19,7 +20,9 @@ export const router = createBrowserRouter([
 
                     }
                 ]
-            }
+            },
+            { path: "*", element: <NotFoundPage/> }
+            
 
         ]
 
