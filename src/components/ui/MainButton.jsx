@@ -13,7 +13,7 @@ const MainButton = ({
 }) => {
     const buttonVariant = {
         default:
-            "bg-primary text-white hover:bg-primary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
+            "bg-primary text-white hover:bg-secondary dark:bg-secondary  dark:hover:bg-primary hover:text-tertiary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
         secondary:
             "bg-secondary text-tertiary hover:bg-primary shadow-md shadow-primary/40 hover:shadow-[0_2px_8px] hover:shadow-primary/40",
         destructive:

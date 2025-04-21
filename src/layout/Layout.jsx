@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import ScrollToTop from '../components/layout/ScrollToTop';
 
 const Layout = () => {
     const { darkMode } = useTheme();
@@ -23,6 +24,7 @@ const Layout = () => {
         <header  className="sticky top-0 w-full z-50">
             <Header/>
         </header>
+        <ScrollToTop/>
             <main>
                 <Outlet />
             </main>

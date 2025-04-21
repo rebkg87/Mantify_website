@@ -15,7 +15,7 @@ const MainNav = () => {
                 </li>
                 <li>
                     <NavLink
-                        to="/Service"
+                        to="/services"
                         className={({ isActive }) => `text-sm ${isActive ? 'text-primary font-semibold' : 'text-secondary'} hover:text-secondary dark:text-white dark:hover:text-tertiary transition-colors`}
                     >
                         Servicios
@@ -23,7 +23,7 @@ const MainNav = () => {
                 </li>
                 <li>
                     <NavLink
-                        to="/About"
+                        to="/about"
                         className={({ isActive }) => `text-sm ${isActive ? 'text-primary font-semibold' : 'text-secondary'} hover:text-secondary dark:text-white dark:hover:text-tertiary transition-colors`}
                     >
                         Nosotros
@@ -31,7 +31,7 @@ const MainNav = () => {
                 </li>
                 <li>
                     <NavLink
-                        to="/Contact"
+                        to="/contact"
                         className={({ isActive }) => `text-sm ${isActive ? 'text-primary font-semibold' : 'text-secondary'} hover:text-secondary dark:text-white dark:hover:text-tertiary transition-colors`}
                     >
                         Contacto
