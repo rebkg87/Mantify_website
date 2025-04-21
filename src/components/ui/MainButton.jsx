@@ -23,7 +23,7 @@ const MainButton = ({
         ghost:
             "hover:bg-primary hover:text-primary-foreground",
         link:
-            "text-primary underline-offset-4 hover:underline",
+            "text-primary dark:text-tertiary underline-offset-4 hover:underline",
     };
 
     const buttonSize = {
