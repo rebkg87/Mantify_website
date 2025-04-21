@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MainInput from './MainInput'
 import MainButton from './MainButton'
 import { useForm } from 'react-hook-form';
@@ -8,7 +8,7 @@ import { contactFormSchema } from '../../validationSchemas/validationSchemas';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ContactForm = () => {
-    const [showModal, setShowModal] = React.useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const {
         register,
@@ -71,12 +71,12 @@ const ContactForm = () => {
                     </div>
                     <div>
                         <MainInput
-                            id="title"
-                            placeholder="Asunto"
-                            {...register("title")}
+                            id="company"
+                            placeholder="Empresa"
+                            {...register("company")}
                         />
-                        {errors.title && (
-                            <p className="text-red-500 text-sm mt-1">{errors.title.message}</p>
+                        {errors.company && (
+                            <p className="text-red-500 text-sm mt-1">{errors.company.message}</p>
                         )}
                     </div>
                     <div>

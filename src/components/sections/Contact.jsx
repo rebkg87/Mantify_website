@@ -11,7 +11,7 @@ const Contact = ({ contactTitle, contactDescription, contactList, contactCTA, li
                 <p className='text-tertiary-foreground dark:text-white text-md mt-6'>
                     {contactDescription}
                 </p>
-                <ul className={`text-tertiary dark:text-white list-disc ${listVisibility} `}>
+                <ul className={`text-secondary dark:text-white mt-10 ${listVisibility} `}>
                     <li>
                         {contactList}
                     </li>
