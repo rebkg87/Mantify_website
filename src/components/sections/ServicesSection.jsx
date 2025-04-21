@@ -10,7 +10,7 @@ const ServicesSection = () => {
                 className="font-bold px-24 text-6xl text-primary dark:text-tertiary  leading-none flex items-center justify-end"
                 text={"Conoce Nuestros Servicios"}
             />
-            <div className='mt-10 flex flex-col md:flex-row gap-6 items-center justify-center'>
+            <div className='my-10 flex flex-col md:flex-row gap-6 items-center justify-center'>
                 {servicesData.map(service => (
                     <ServiceCard
                         key={service.number}
