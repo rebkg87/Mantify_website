@@ -13,6 +13,8 @@ export const siteConfig = {
             background: "#214350",
             text: "#CDCFD0"
         }
-    }
+    },
+    gradientDark: "assets/hero/gradii-1920x1080 (4).png",
+    gradientLight:"assets/hero/gradii-1920x1080 (3).png"
 
 }

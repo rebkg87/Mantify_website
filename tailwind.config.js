@@ -37,7 +37,8 @@ export default {
       "4xl": ["2.5rem", { lineHeight: "normal" }],
       "5xl": ["3rem", { lineHeight: "normal" }],
       "6xl": ["3.5rem", { lineHeight: "normal" }],
-      "7xl": ["4rem", { lineHeight: "normal" }],
+      "7xl": ["5rem", { lineHeight: "95%" }],
+      "8xl": ["7rem", { lineHeight: "95%" }],
     },
     extend: {
       colors: {
@@ -92,9 +93,9 @@ export default {
           foreground: "hsl(222.2 84% 4.9%)",
         },
         backgroundImage: {
-        'custom-gradient-dark': 'linear-gradient(148deg, #214350, #214350, #5a7c8c)',
-        'custom-gradient-light': 'linear-gradient(148deg, #bcd9e6, #ffffff 22%, #ffffff  53%)',
-      }
+          'custom-gradient-dark': 'linear-gradient(148deg, #214350, #214350, #5a7c8c)',
+          'custom-gradient-light': 'linear-gradient(148deg, #bcd9e6, #ffffff 22%, #ffffff  53%)',
+        }
       },
       typography: ({ theme }) => ({
         DEFAULT: {
@@ -140,13 +141,18 @@ export default {
           from: { opacity: 100, transform: "translateY(0)" },
           to: { opacity: 0, transform: "translateY(-4px)" },
         },
+        "shine": {
+          '0%': { 'background-position': '100%' },
+          '100%': { 'background-position': '-100%' },
+        },
       },
       animation: {
         fly: "fly 6s cubic-bezier(0.75, 0.02, 0.31, 0.87) infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.2s ease-in-out",
+        "fade-in": "fade-in 3s ease-in-out",
         "fade-out": "fade-out 0.2s ease-in-out",
+        "shine": 'shine 5s linear infinite',
       },
     },
   },
