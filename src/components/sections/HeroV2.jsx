@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../ui/Card'
 import processData from '../../data/processData'
 
-const HowWeDo = () => {
+const HeroV2 = () => {
 
     return (
         <div className='mt-12 w-full h-screen flex flex-col items-center py-20 px-12 gap-6 dark:bg-secondary bg-tertiary'>
@@ -24,4 +24,4 @@ const HowWeDo = () => {
     )
 }
 
-export default HowWeDo
+export default HeroV2
