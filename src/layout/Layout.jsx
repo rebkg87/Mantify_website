@@ -8,7 +8,7 @@ import ScrollToTop from '../components/layout/ScrollToTop';
 const Layout = () => {
     const { darkMode } = useTheme();
 
-    useEffect(()=> { 
+    useEffect(() => {
         if (darkMode) {
             document.body.classList.add('bg-primary')
             document.body.classList.remove('bg-white');
@@ -17,19 +17,19 @@ const Layout = () => {
             document.body.classList.remove('bg-primary')
 
         }
-    },[darkMode])
+    }, [darkMode])
 
     return (
         <div className={darkMode ? 'dark' : ''}>
-        <header  className="sticky top-0 w-full z-50">
-            <Header/>
-        </header>
-        <ScrollToTop/>
+            <header className="sticky top-0 w-full z-50">
+                <Header />
+            </header>
+            <ScrollToTop />
             <main>
                 <Outlet />
             </main>
             <footer>
-                <Footer/>
+                <Footer />
             </footer>
         </div>
     )
