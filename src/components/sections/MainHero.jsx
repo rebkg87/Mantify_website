@@ -34,9 +34,9 @@ const MainHero = () => {
                             Tu espacio, siempre en las mejores condiciones.
                         </p>
                         <MainButton
-                            className='md:w-[60%] lg:w-[45%] font-semibold mb-12'
+                            className='w-fit font-semibold text-xs rounded-xl shadow-sm hover:scale-105 dark:hover:bg-white dark:hover:text-secondary'
                             variant="secondary"
-                            size="sm"
+                            size="md"
                             text="Conócenos"
                             onClick={handleHeroButton}
                             iconVisibility="icon-visible"
